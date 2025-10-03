@@ -1,0 +1,25 @@
+.checkList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    > li {
+        font: 18px/24px $mono;
+        margin-bottom: 23px;
+        padding-left: 35px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 22px;
+            height: 21.42px;
+            background: url(../../public/assets/checkList.svg) no-repeat;
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+    }
+    &.checkList_borderedTop {
+        margin-top: 26px;
+        padding-top: 26px;
+        border-top: 2px solid #e8ebea;
+    }
+}

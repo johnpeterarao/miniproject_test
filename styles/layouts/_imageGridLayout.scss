@@ -1,0 +1,30 @@
+.ImageGridLayout {
+    padding: 42px 0 67px;
+
+    .ImageGridLayout {
+        &_holder {
+            @include flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_text {
+            width: 47.44%;
+            p {
+                font: 18px/24px $mono;
+            }
+        }
+        &_image {
+            width: 46.78%;
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &-2 {
+        .pill + .ImageGridLayout_holder {
+            margin-top: 82px;
+        }
+    }
+}

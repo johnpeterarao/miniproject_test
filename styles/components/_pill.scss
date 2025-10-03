@@ -2,8 +2,20 @@
     padding: 6.5px 20px;
     border-radius: 28px;
     text-align: center;
-    font: 18px/24px $roboto;
+    display: inline-block;
     &-yellow {
         background: $yellow;
+        p {
+            color: $yellowPillText;
+            font: 18px/24px $roboto;
+            font-weight: 400;
+        }
+    }
+    &-full {
+        display: block;
+    }
+    &-tall {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }

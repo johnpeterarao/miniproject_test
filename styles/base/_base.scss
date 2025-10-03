@@ -1,5 +1,12 @@
 @import "./container";
+@import "./global";
+@import "./typography";
 
 body {
     background: #EFF7FA;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
 }
