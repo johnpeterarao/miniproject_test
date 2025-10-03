@@ -1,4 +1,5 @@
 .header {
+    background: $white;
     .thinbar {
         background: #FFBA00;
         text-align: center;
@@ -27,6 +28,9 @@
         }
         &_logo {
             margin-left: 16px;
+        }
+        &_cart {
+            margin-left: 29px;
         }
     }
 }

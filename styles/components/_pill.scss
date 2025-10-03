@@ -1,0 +1,9 @@
+.pill {
+    padding: 6.5px 20px;
+    border-radius: 28px;
+    text-align: center;
+    font: 18px/24px $roboto;
+    &-yellow {
+        background: $yellow;
+    }
+}

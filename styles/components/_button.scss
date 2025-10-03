@@ -1,0 +1,17 @@
+.btn { //comment 3
+    border-radius: 35px;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    font: 16px/22px $roboto;
+    text-transform: uppercase;
+    border: 0;
+    background: transparent;
+    padding: 5px 25px;
+    cursor: pointer;
+    &-dark {
+        color: $mintWhite;
+        background: $darkBtn;
+    }
+}
