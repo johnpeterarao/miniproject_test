@@ -1,0 +1,59 @@
+.imageCard_sec {
+    padding-top: 116px;
+    padding-bottom: 86px;
+    .imageCard {
+        &_intro {
+            margin-bottom: 90px;
+            text-align: center;
+            &-icon {
+                width: 110px;
+                height: 110px;
+                margin: 0 auto 40px;
+                display: block;
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        &_caption {
+            font: 18px/24px $mono;
+            color: $textBlack;
+            display: block;
+            margin-bottom: 37px;
+        }
+        &_list {
+            @include flex; 
+            justify-content: space-between;
+        }
+        &_card {
+            max-width: 333px;
+            width: 100%;
+            &-portrait {
+                height: 480px;
+                width: 100%;
+                border-radius: 50px;
+                overflow: hidden;
+                margin-bottom: 22px;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &_details {
+                @include flex;
+                align-items: center;
+                h4 {
+                    font: 18px/24px $mono;
+                    flex: 1;
+                }
+
+            }
+            &_thumb {
+                width: auto;
+                height: auto;
+                margin-right: 20px;
+            }
+        }
+    }
+}

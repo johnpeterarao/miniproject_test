@@ -9,7 +9,7 @@ export default function Section2() {
                 </div>
                 <div className="ImageGridLayout_holder">
                     <div className="ImageGridLayout_text">
-                        <h3 className="heading_main">A simple routine that works</h3>
+                        <h2 className="heading_main">A simple routine that works</h2>
                         <p>Say goodbye to complicated skincare routines. Our mens' skincare line is designed for simplicity and effectiveness. With our lightweight formulas, you can achieve healthier and younger-looking skin with minimal effort. Perfect for guys who are new to skincare or just want to keep it simple.</p>
                         <ul className="checkList checkList_borderedTop">
                             <li>Lightweight formulas</li>
