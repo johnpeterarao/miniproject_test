@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Hi Ma'am / Sir,
 
-## Getting Started
+Good day!
 
-First, run the development server:
+This is the first part of the mini project.
+Start time October 3, 2025 at 11 am and stop developing 2:30pm.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I have to stopped due to my current schedule is 3pm to 12.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Search for the following:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. _container.scss
+- Here you can see that my container width is 1306px. Upon checking the design, the container of each section is 1266px. I added 40px so that I can add 20px padding to each side of the container so that it will be mobile ready. The 40px depends on the container for mobile.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. _header.scss
+- Here you can see that I created the structure header_left and header_right this is because it's easier for developers to read and follow the structure.
 
-## Learn More
+3. _button.scss
+- Here you can see that I used flex to align the button, but usually I don't. I just usually use padding top and bottom to center the alignment. Due to I can't check the padding of the first button in the header I decided to use the height and flex to make it vertically align.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Some Explanation:
 
-## Deploy on Vercel
+For folder structure,
+I used sass 7path folder path. As you can see, I just created 5 since this is just what I need for now.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For classes, 
+If you are familiar with BEM, this is pretty similar to it. It's just that I don't want my classes to be too long that's why I dont usually use "--modifier".
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+And for the sections,
+modern ecommerce sites like Bigcommerce and Shopify already have JSON format data that they supply to reusable sections. Just like margins, image, textcontent and etc. To make my development bit fast, I make the sections static for now. But rest assured that I am familiar with modern OOP techniques. 
+
+
