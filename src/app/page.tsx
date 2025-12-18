@@ -1,19 +1,34 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/header";
-import Section2 from "@/sections/section2";
-import Section3 from "@/sections/section3";
-import Section4 from "@/sections/section4";
-import Section5 from "@/sections/section5";
+import Link from "next/link";
+import { HomepageBannerData, HomepageStripBanner, HomepageTextWithImage, HomepageWhyChoose, HomepageTextBoard } from "@/constants/homepage";
+import Banner from "@/components/banner";
+import StripBanner from "@/components/stripBanner";
+import TextWithImage from "@/components/textWithImage";
+import WhyChooseSnapDesk from "@/components/why-choose";
+import TextBoard from "@/components/textBoard";
+import "aos/dist/aos.css";
+import { useState } from "react";
+
+
 
 export default function Home() {
+  const [activePanel, setActivePanel] = useState(99);
+
+  const onActivePanel = (id: number) => {
+    setActivePanel(id);
+  }
+
   return (
     <>
-      <Header />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
+      <Banner data={HomepageBannerData} handleActivePanel={onActivePanel} activePanel={activePanel}/>
+      <StripBanner data={HomepageStripBanner}/>
+      <TextWithImage data={HomepageTextWithImage}/>
+      <WhyChooseSnapDesk data={HomepageWhyChoose}/>
+      <TextBoard data={HomepageTextBoard}/>
     </>
   );
 }

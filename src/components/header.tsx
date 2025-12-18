@@ -1,45 +1,49 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Menus } from "@/constants/menu";
 
 
 export default function Header() {
     return (
        <header className="header">
-            <div className="thinbar">
-                <div className="container">
-                    <p>free shipping on us orders over $100</p>
-                </div>
-            </div>
             <div className="header_main">
                 <div className="container">
                     <div className="header_holder">
-                        <div className="header_left">
-                            <div className="header_burger">
-                                <Image
-                                    src="/assets/burgerMenu.svg" 
-                                    alt="Logo"
-                                    width={32}
-                                    height={22}
-                                />
-                            </div>
-                            <div className="header_logo">
-                                <Image
-                                    src="/assets/logo.svg" 
-                                    alt="Logo"
-                                    width={42}
-                                    height={55}
-                                />
-                            </div>
+                        <div className="header_logo">
+                            <Image
+                                src="/snapdesk_logo.png" 
+                                alt="Logo"
+                                width={110}
+                                height={110}
+                            />
                         </div>
-                        <div className="header_right">
-                            <button className="btn btn-dark">Get Started</button>
-                            <div className="header_cart">
-                                <Image
-                                    src="/assets/cart-icon.png" 
-                                    alt="Logo"
-                                    width={37}
-                                    height={33}
-                                />
-                            </div>
+                        <div className="header_nav">
+                            <ul>
+                                { 
+                                    Menus?.map((menu, i) => (
+                                        <li key={i} className={`${menu.children.length ? "hasChildren" : ""}`}>
+                                            { 
+                                                !menu.children.length ? 
+                                                    <Link href={menu.link} target={menu.opentab ? "_blank" : ""}>{ menu.title}</Link> 
+                                                    : 
+                                                    <>
+                                                        <a className="hasChildren">{ menu.title}</a>
+                                                        <div className="header_submenu">
+                                                            <ul>
+                                                                { menu.children.map((m, ind) => (
+                                                                    <li key={ind}>
+                                                                        <Link href={m.link} target={m.opentab ? "_blank" : ""}>{m.title}</Link>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    </>
+                                            }
+                                            
+                                        </li>
+                                    ))
+                                }
+                            </ul>
                         </div>
                     </div>
                 </div>

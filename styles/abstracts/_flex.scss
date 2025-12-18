@@ -3,3 +3,36 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+@mixin montlight {
+    font-family: $monts;
+    font-weight: $light;
+}
+@mixin montreg {
+    font-family: $monts;
+    font-weight: $regular;
+}
+@mixin montmedium {
+    font-family: $monts;
+    font-weight: $med;
+}
+@mixin montbold {
+    font-family: $monts;
+    font-weight: $bold;
+}
+@mixin montextra {
+    font-family: $monts;
+    font-weight: $extrabold;
+}
+@mixin openreg {
+    font-family: $opensans;
+    font-weight: $regular;
+}
+@mixin openbold {
+    font-family: $opensans;
+    font-weight: $bold;
+}
+@mixin headingbold {
+    font-family: $heading;
+    font-weight: $bold;
+}
